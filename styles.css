@@ -1,0 +1,109 @@
+body{
+    background-image: url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Card styles */
+.card{
+    width: 340px;
+    margin: 100px auto 0 auto;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 0 10px #535353;
+    overflow: hidden;
+}
+
+/* Card in card circle */
+.card .card-circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card .card-circle span{
+    width: 7px;
+    height: 7px;
+    background-color: #cacaca;
+    border-radius: 50%;
+    margin: 20px 2.5px 0 2.5px;
+}
+.card .card-circle span.active{
+    background-color: #777777;
+}
+
+/* Card in card title */
+.card .card-title{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.card .card-title h2{
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+}
+
+/* Card in card section */
+.card .card-section{
+    display: flex;
+    flex-direction: column;
+}
+.card .card-section .card-items{
+    height: 55px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-top: 1px solid rgb(190, 190, 190);
+    cursor: pointer;
+    transition: all .1s linear;
+}
+.card .card-section .card-items:hover{
+    background-color: rgb(238, 238, 238);
+}
+.card .card-section .card-items img:first-child{
+    margin-left: 35px;
+    margin-right: 20px;
+}
+.card .card-section .card-items h5{
+    text-transform: uppercase;
+    color: rgb(195, 195, 195);
+    letter-spacing: 1px;
+}
+.card .card-section .card-items h5.active{
+    color: #000;
+}
+.card .card-section .card-items img:last-child{
+    margin-left: 100px;
+}
+
+/* Card in card link */
+.card .card-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: #598bdd;
+    border-radius: 0 0 3px 3px;
+    cursor: pointer;
+    transition: all .1s linear;
+}
+.card .card-link:active{
+    transform: translateY(2px);
+}
+.card .card-link:hover{
+    background-color: #4584e9;
+}
+.card .card-link h5{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-right: 3px;
+}
